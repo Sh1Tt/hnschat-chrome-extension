@@ -1,14 +1,25 @@
 {
 	"manifest_version": 3,
-	"name": "hnschat-extension",
-	"description": "A chrome-extension for the hns-chat on https://hnschat/ only.",
-	"version": "1.0",
+	"name": "hnschat experiment",
+	"description": "A decentralised chat on the handshake net. Works for https://hnschat/ only.",
+	"version": "1.0.1",
 	"icons": { 
 		"128": "icon128.png",
 		"32": "icon.png"
 	},
-	"permissions": ["storage"],
+	"background": {
+		"service_worker": "worker.js"
+	},
+	"permissions": ["storage", "activeTab", "scripting"],
 	"action": {
-    	"default_popup": "popup.html"
-  	}
+		"default_title": "hnschat",
+    	"default_popup": "popup.html",
+    	"default_icon": "icon.png"
+  	},
+  	"content_scripts": [
+		{
+			"matches": ["https://hnschat/"],
+			"js": ["chat-listener.js"]
+		}
+	]
 }
