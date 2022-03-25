@@ -1,18 +1,16 @@
-
-const handler = async e =>
+// popup.js
+const handler = () =>
 {
-	const chatHandler = () =>
-	{
-		const chat = iframe.contentWindow.document.querySelector( `[data-page="chat"]` );
-
-		console.log( chat );
-
-	}
-	
 	const iframe = document.body.querySelector( `[data-component="hnschat"]` );
 
-	iframe.addEventListener( "load", chatHandler, false );
+	chrome.storage.sync.get("size", data =>
+	{
+		iframe.height = parseInt( data.size.height ) || 600;
+
+		iframe.width = parseInt( data.size.width ) || 320;
+
+	});
 
 }
 
-document.addEventListener( "DOMContentLoaded", handler, false );
+document.addEventListener("DOMContentLoaded",handler,false);
