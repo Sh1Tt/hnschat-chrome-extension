@@ -35,9 +35,9 @@ const handler = () =>
 {
 	chrome.storage.sync.get("data", response =>
 	{
-		document.querySelector( `#height` ).value = parseInt( response.data.height ) || 600;;
+		document.querySelector( `#height` ).value = parseInt( response.data.height || 600 );
 
-		document.querySelector( `#width` ).value = parseInt( response.data.width ) || 320;
+		document.querySelector( `#width` ).value = parseInt( response.data.width || 320 );
 
         document.querySelector( `#src` ).value = response.data.src || "https://hnschat/";
 

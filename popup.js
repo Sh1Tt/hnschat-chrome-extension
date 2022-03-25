@@ -3,11 +3,11 @@ const handler = () =>
 {
 	const iframe = document.body.querySelector( `[data-component="hnschat"]` );
 
-	chrome.storage.sync.get("size", data =>
+	chrome.storage.sync.get("data", response =>
 	{
-		iframe.height = parseInt( data.size.height ) || 600;
+		iframe.height = parseInt( response.data.height || 600 );
 
-		iframe.width = parseInt( data.size.width ) || 320;
+		iframe.width = parseInt( response.data.width || 320 );
 
 	});
 
