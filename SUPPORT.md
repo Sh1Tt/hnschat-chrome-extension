@@ -5,7 +5,7 @@ If you are experiencing any problems with the extension at all, please contact m
 Hnschat chrome-extension is an independend and unfunded project with little to no resources. But we are happy to help however we can!
 I was building another project when i got the idea of adding hnschat directly to the browser. So the last days I took a detour in my journey:
 
-Developping chrome-extensions anno 2022. I stripped out most of the wonkey code and just framed hnschat. Thanks for the wonderful chat @eskimo!
+Developping chrome-extensions anno 2022. I stripped out most of the wonkey code and just framed hnschat. Thanks for the wonderful [hnschat](https://hnschat/) @github/eskimo!
 
 ##
 
