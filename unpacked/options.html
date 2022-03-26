@@ -5,7 +5,7 @@
     <title>hnschat-extension options</title>
     <style>
         html, body {
-            background-color: rgba( 3, 3, 6, 1 );
+            background-color: rgba( 10, 10, 16, 1 );
             color: rgba( 253, 253, 255, 1 );
             width: 100%;
             height: 100%;
@@ -56,10 +56,11 @@
             width: 280px;
             margin: 2em 1em 2em 2em;
             padding: 1.5em .75em;
-            border-radius: 1em;
+            border-radius: .15em;
             background-color: rgba( 63, 63, 69, 1 );
-            background: linear-gradient( 191deg, #060505, #414141, #000000 );
-            box-shadow: 1px 1px 5px rgba( 255, 255, 255, .5 );
+            /* background: linear-gradient( 191deg, #060505, #414141, #000000 ); */
+            background: linear-gradient( 191deg, rgba( 63, 63, 69, 1 ), rgba( 73, 73, 80, 1 ), rgba( 63, 63, 69, 1 ) );
+            box-shadow: 1px 1px 0px rgb(55 55 55 / 50%);
         }
 
         .card h2 {
@@ -113,7 +114,7 @@
             border-radius: .25em;
         }
     </style>
-    <script type="text/javascript" src="options.js"></script>
+    <script type="text/javascript" src="options.min.js"></script>
 </head>
 <body>
     <form method="post" action="">

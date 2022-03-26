@@ -1,0 +1,25 @@
+{
+	"manifest_version": 3,
+	"name": "HNSchat - beta",
+	"description": "HNSchat. A decentralised chat using handshake names. Own your identity now. Chat privately. Send crypto and more! Currently, more features are added every day! A project by the handshake community.",
+	"author": "Sh1Tt",
+	"version": "0.0.3",
+	"icons": {
+		"16": "/images/wb-16.png",
+		"32": "/images/wb-32.png",
+		"48": "/images/wb-48.png",
+		"128":"/images/wb-128.png"
+	},
+	"action": {
+		"default_title": "hnschat",
+    	"default_popup": "popup.html",
+    	"default_icon": {
+			"16": "/images/wb-16.png",
+			"32": "/images/wb-32.png",
+			"48": "/images/wb-48.png",
+			"128":"/images/wb-128.png"
+		}
+  	},
+	"permissions": ["storage"],
+	"options_page": "options.html"
+}
