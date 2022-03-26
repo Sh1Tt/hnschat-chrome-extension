@@ -5,19 +5,19 @@
 	"author": "Sh1Tt",
 	"version": "0.0.3",
 	"icons": {
-		"16": "/images/wb-16.png",
-		"32": "/images/wb-32.png",
-		"48": "/images/wb-48.png",
-		"128":"/images/wb-128.png"
+		"16": "/logo/grey_16.png",
+		"32": "/logo/grey_32.png",
+		"48": "/logo/grey_48.png",
+		"128":"/logo/grey_128.png"
 	},
 	"action": {
 		"default_title": "hnschat",
     	"default_popup": "popup.html",
     	"default_icon": {
-			"16": "/images/wb-16.png",
-			"32": "/images/wb-32.png",
-			"48": "/images/wb-48.png",
-			"128":"/images/wb-128.png"
+			"16": "/logo/grey_16.png",
+			"32": "/logo/grey_32.png",
+			"48": "/logo/grey_48.png",
+			"128":"/logo/grey_128.png"
 		}
   	},
 	"permissions": ["storage"],
