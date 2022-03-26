@@ -1,7 +1,7 @@
 {
 	"manifest_version": 3,
 	"name": "HNSchat - beta",
-	"description": "HNSchat. A decentralised chat using handshake names. Own your identity now. Chat privately. Send crypto and more! Currently, more features are added every day! A project by the handshake community.",
+	"description": "HNSchat. A decentralised chat using handshake names. Own your identity now. Chat privately. Send crypto. And more to come!",
 	"author": "Sh1Tt",
 	"version": "0.0.3",
 	"icons": {
