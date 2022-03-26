@@ -7,6 +7,8 @@
         html, body {
             background-color: rgba( 3, 3, 6, 1 );
             color: rgba( 253, 253, 255, 1 );
+            width: 100%;
+            height: 100%;
         }
 
         * {
@@ -15,13 +17,14 @@
             margin: 0;
             padding: 0;
             border: none;
+            text-shadow: 1px 1px 4px rgba( 43, 43, 47, 1 );
         }
 
         header {
             position: relative;
             display: flex;
-            justify-content: flex-start;
-            align-items: stretch;
+            justify-content: space-between;
+            align-items: center;
             width: 100%;
             height: 64px;
             margin:0;
@@ -29,17 +32,20 @@
             border-bottom: 1px solid rgba( 255, 255, 255, .5 );
         }
 
-        header h2 {
-            margin: auto 1em;
+        header h1 {
+            margin: auto 1.25em;
         }
         
         .container {
             display: flex;
+            flex-direction: row;
             flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            width: 100%;
+            height: auto;
             margin: 0;
             padding: 0;
-
-
         }
 
         .card {
@@ -48,17 +54,24 @@
             flex-direction: column;
             height: 200px;
             width: 280px;
-            margin: 2em 1em;
+            margin: 2em 1em 2em 2em;
             padding: 1.5em .75em;
             border-radius: 1em;
             background-color: rgba( 63, 63, 69, 1 );
-            background: linear-gradient( 191deg, #282828, #414141, #282828 );
+            background: linear-gradient( 191deg, #060505, #414141, #000000 );
             box-shadow: 1px 1px 5px rgba( 255, 255, 255, .5 );
         }
 
-        .card h4 {
-            margin: .5em 1em;
-            text-decoration: underline 1px solid white;
+        .card h2 {
+            margin: .25em .5em;
+        }
+        
+        .card img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 1em;
+            filter: invert( 75% );
         }
 
         .field {
@@ -75,9 +88,14 @@
             margin: .375em 0;
         }
 
+        .astrix
+        {
+            color: crimson;
+        }
+
         .size-input {
             position: relative;
-            width: 80px;
+            width: 96px;
             border-radius: .25em;
             background-color: rgb(37, 37, 37);
             color:rgba( 253, 253, 255, 1 );
@@ -88,63 +106,68 @@
             position: relative;
             width: max-content;
             height: auto;
-            margin: .5em 1em;
-            padding: .375em .75em;
+            margin: .375em 1.5em;
+            padding: .75em 1.5em;
             background-color: #409aed;
             color: rgba( 253, 253, 255, 1 );
             border-radius: .25em;
         }
     </style>
+    <script type="text/javascript" src="options.js"></script>
 </head>
 <body>
-    <form method="post">
+    <form method="post" action="">
         <header>
-            <h2>
-                hnschat-extension
-            </h2>
+            <h1>
+                hnschat-extension options
+            </h1>
+            
         </header>
         <div class="container">
             <div class="card">
-                <h4>
+                <h2>
                     Size settings
-                </h4>
+                </h2>
+                <img src="/images/logo-16.png" alt="hnschat logo" width="16" height="16">
                 <div class="field">
                     <span class="line">
-                        <label for="width">
-                            width:
+                        <label for="popup-width">
+                            <h4>Width: <span class="astrix">*max 800</span></h4>
                         </label>
-                        <input type="text" class="size-input" id="width" name="width" />
+                        <input type="text" class="size-input" id="popup-width" name="popup-width" />
                     </span>
                     <span class="line">
-                        <label for="height">
-                            Height:
+                        <label for="popup-height">
+                            <h4>Height: <span class="astrix">*max 600</span></h4>
                         </label>
-                        <input type="text" class="size-input" id="height" name="height" />
+                        <input type="text" class="size-input" id="popup-height" name="popup-height" />
                     </span>
                 </div>
             </div>
-        </div>
-        <div class="container">
             <div class="card">
-                <h4>
-                    Source:
-                </h4>
+                <h2>
+                    Networking
+                </h2>
+                <img src="/images/logo-16.png" alt="hnschat logo" width="16" height="16">
                 <div class="field">
                     <span class="line">
-                        <label for="width">
-                            width:
+                        <label for="popup-source">
+                            <h4>Source:</h4>
                         </label>
-                        <input type="text" class="size-input" id="src" name="src" />
+                        <!-- <input type="text" class="size-input" id="popup-source" name="popup-source" /> -->
+                        <select class="size-input" id="popup-source">
+                            <option value="https://hnschat/">hnschat</option>
+                            <option value="https://hns.chat/">hns.chat</option>
+                        </select>
                     </span>
                 </div>
             </div>
         </div>
         <div>
-            <button type="submit" class="submit" id="submit" name="submit" value="Submit">
+            <button type="submit" class="submit" id="popup-submit" name="popup-submit" value="Submit">
                 Save settings
             </button>
         </div>
     </form>
-    <script type="text/javascript" src="options.js"></script>
 </body>
 </html>

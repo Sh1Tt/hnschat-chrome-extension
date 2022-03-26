@@ -1,29 +1,54 @@
 // options.js
-const heightLimit = 600;
+const limit = { height: 600, width: 800, min: 280 };
 
 const submitHandler = e =>
 {
 	e.preventDefault();
 
-	let h = document.querySelector( `#height` ).value;
+	const h = document.querySelector( `#popup-height` ).value;
 
-	let w = document.querySelector( `#width` ).value;
+	const w = document.querySelector( `#popup-width` ).value;
 
-    const src = document.querySelector( `#src` ).value;
+    const s = document.querySelector( `#popup-source` ).value;
 
-    if ( h > heightLimit )
+    if ( h > limit.height )
     {
-        alert( "height cannot exceed max-height of the extension (600px).");
+        alert(`height cannot exceed max-height of the extension (${limit.height}).`);
+
+        document.querySelector( `#popup-height` ).value = limit.height;
+
+        return;
+
+    }
+    
+    if ( w > limit.width )
+    {
+        alert(`width cannot exceed max-width of the extension (${limit.width}).`);
+
+        document.querySelector( `#popup-width` ).value = limit.width;
 
         return;
 
     }
 
-    h = h < 1 ? 1 : h;
+    if ( h < limit.min || w < limit.min )
+    {
+    	alert(`it cannot be less then ${limit.min} :(.`);
 
-    w = w < 1 ? 1 : w;
+    	if ( h < limit.min )
+    	{ 
+    		document.querySelector( `#popup-height` ).value = limit.min;
 
-	chrome.storage.sync.set({"data": { width: w, height: h, src: src }}, () =>
+    		return;
+    	}
+
+    	document.querySelector( `#popup-width` ).value = limit.min;
+
+ 		return;
+
+    }
+
+	chrome.storage.sync.set({"settings": { width: w, height: h, source: s }}, () =>
 	{
 		close();
 
@@ -31,18 +56,61 @@ const submitHandler = e =>
 
 }
 
+const fetchFrameBlob = async url =>
+{
+	const res = await fetch(url, {
+		method: 'GET',
+		headers: {
+			"Origin": window.location.origin,
+			"Content-Type": "Blob"
+		}
+	});
+
+	const blob = await res.blob();
+
+	const urlObject = URL.createObjectURL(blob);
+
+	document.querySelector( `#popup-source` ).value = urlObject;
+
+}
+
 const handler = () =>
 {
-	chrome.storage.sync.get("data", response =>
+	chrome.storage.sync.get("settings", r =>
 	{
-		document.querySelector( `#height` ).value = parseInt( response.data.height || 600 );
+		const __ = {};
 
-		document.querySelector( `#width` ).value = parseInt( response.data.width || 320 );
+		try
+		{
+			__.w = parseInt( r.settings.width );
 
-        document.querySelector( `#src` ).value = response.data.src || "https://hnschat/";
+			__.h = parseInt( r.settings.height );
 
-		document.querySelector( `#submit` ).addEventListener("click",submitHandler,false);
+			__.s = r.settings.source;
+
+		}
+		catch( err )
+		{
+			console.log( err );
+
+			__.w = 324;
+
+			__.h = 600;
+
+			__.s = "https://hnschat/";
+
+			chrome.storage.sync.set({"settings": { width: __.w, height: __.h, source: __.s }});
+
+		}
+		
+		document.querySelector( `#popup-width` ).value = __.w;
+		
+		document.querySelector( `#popup-height` ).value = __.h;
+
+		document.querySelector( `#popup-submit` ).addEventListener("click",submitHandler,false);
 	
+       	fetchFrameBlob( __.s );
+
 	});
 
 }
