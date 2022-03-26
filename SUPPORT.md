@@ -3,7 +3,7 @@
 Welcome on the support page for the hnschat extension! 
 If you are experiencing any problems with the extension at all, please contact me!
 
-# CONTACT
+### CONTACT
 
 ###### SUPPORT:
 EMAIL: [sh1tt@hns.is](sh1tt@hns.is)
@@ -13,7 +13,7 @@ NAME: Maurice Stolk
 EMAIL: [info@mauricestolk.nl](info@mauricestolk.nl)
 TWITTER: [@_sh1tt](twitter.com/sh1tt)
 
-# HELP
+### HELP
 
 #### RESOLVING HANDSHAKE NAMES
 
@@ -34,5 +34,5 @@ For now, I'll give you two of my favourite options:
 
 {Description, guide with/by link}
 
-# DONATIONS
+### DONATIONS
 
