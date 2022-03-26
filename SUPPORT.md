@@ -37,6 +37,8 @@ For now, I'll give you two of my favourite options:
 ###### BobWallet
 - [bobwallet](bobwallet.io)
 
+#
+
 #### SETTING A TXT RECORD
 
 {Description, guide with/by link}
