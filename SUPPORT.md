@@ -23,6 +23,9 @@ I was working on another project when i got the idea to add hnschat directly to 
 ``-``Twitter: [@_sh1tt](twitter.com/sh1tt)  
 ``-``Website: [sh1tt/](http://sh1tt/)  
 
+#
+
+
 ## HELP
 
 #### RESOLVING HANDSHAKE NAMES
