@@ -51,12 +51,13 @@ For now, I'll give you two of my favourite options:
 
 ### WE SUPPORT YOU, YOU SUPPORT US? ☕
 
-##### ALL CREDITS FOR HNSCHAT GO TO [ESKIMO](https://github.com/eskimo)
+###### ALL CREDITS FOR HNSCHAT GO TO [ESKIMO](https://github.com/eskimo)
 
 ##### I'm investing my own time and resources to build and maintain this project! If you like and enjoy it, please feel free to buy me a coffee!
--HNS: [hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h](hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h)
--AR: [WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc](WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc)
--BTC:
--ETH:
--SEN:
+HNS: [hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h](hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h)  
+AR: [WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc](WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc)  
+BTC:  
+ETH:  
+SEN:  
+
 ##
