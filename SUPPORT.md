@@ -3,8 +3,8 @@
 ###### THIS IS THE SUPPORT PAGE FOR THE CHROME-EXTENSION ONLY! FOR ANY CREDIT OR QUESTION REGARDING THE CHAT ITSELF, PLEASE VISIT [HNSCHAT](https://hnschat/) OR [HNS.CHAT](https://hns.chat/), CREATED BY [ESKIMO](https://github.com/eskimo).
 
 <!-- LOGO -->
-Welcome on the support page for the `hnschat chrome-extension`! 
-If you are experiencing any issues with the extension, at all, please contact us!
+Welcome on the support page for the `hnschat chrome-extension`.   
+If you are experiencing any issues with the extension, at all, please contact us!  
 `hnschat chrome-extension` is an independend and unfunded project with little to no resources. But, we are happy to help however we can!  
 I was working on another project with hnschat, when i got the idea to add it directly to the browser. So the last days I took a detour in my journey, writing a chrome-extension.  
 In the end I stripped most of the fancy features, which where a little wonkey. What's not there, cannot break. All it is now, is a soure-option and some sizing-options, leaving hnschat 100% hnschat. But, now we can use it at work, or while watching a tutorial, or reading docs or smthng.. in the same window!  
