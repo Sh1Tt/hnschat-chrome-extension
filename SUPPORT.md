@@ -7,9 +7,8 @@ Welcome on the support page for the hnschat extension!
 If you are experiencing any issues with the extension, at all, please contact us!
 `hnschat chrome-extension` is an independend and unfunded project with little to no resources. But, we are happy to help however we can!  
 I was working on another project with hnschat, when i got the idea to add it directly to the browser. So the last days I took a detour in my journey, writing a chrome-extension.  
-In the end I stripped most of the fancy features, which where a little wonkey. What's not there, cannot break. All it is now, is a soure-option and some sizing-options, leaving hnschat 100% hnschat. But, now I can use at work, or while watching a tutorial, or reading docs or smthng.. in the same window!  
-If you have any questions regarding the extension, hit me up on twitter: [@_sh1tt](https://twitter.com/@_sh1tt)  
-! Have a beautiful time!
+In the end I stripped most of the fancy features, which where a little wonkey. What's not there, cannot break. All it is now, is a soure-option and some sizing-options, leaving hnschat 100% hnschat. But, now we can use it at work, or while watching a tutorial, or reading docs or smthng.. in the same window!  
+If you have any questions regarding the extension, hit me up on twitter: [@_sh1tt](https://twitter.com/@_sh1tt)!! Have a beautiful time!
 #
 
 
