@@ -12,16 +12,16 @@ I was working on another project when i got the idea to add hnschat directly to 
 
 ## CONTACT
 
-##### - `SUPPORT`:
+#### `SUPPORT`:
 <!-- AVATAR -->
-###### Email: [sh1tt@hns.is](sh1tt@hns.is)
+###### -Email: [sh1tt@hns.is](sh1tt@hns.is)
 
-##### - `DEVELOPER`:
+#### `DEVELOPER`:
 <!-- AVATAR -->
-###### Name: [Sh1Tt](http://sh1tt.hdns.one/)
-###### Email: [sh1tt@hns.is](sh1tt@hns.is)
-###### Twitter: [@_sh1tt](twitter.com/sh1tt)
-###### Website: [sh1tt/](http://sh1tt/) 
+###### -Name: [Sh1Tt](http://sh1tt.hdns.one/)
+###### -Email: [sh1tt@hns.is](sh1tt@hns.is)
+###### -Twitter: [@_sh1tt](twitter.com/sh1tt)
+###### -Website: [sh1tt/](http://sh1tt/) 
 
 ## HELP
 
