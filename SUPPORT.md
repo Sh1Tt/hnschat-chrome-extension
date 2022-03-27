@@ -1,6 +1,6 @@
 # HNSCHAT CHROME-EXTENSION SUPPORT
 
-###### THIS IS THE SUPPORT PAGE FOR THE CHROME-EXTENSION ONLY! FOR ANY CREDIT OR QUESTION REGARDING THE CHAT ITSELF, PLEASE VISIT [HNSCHAT](https://hnschat/) OR [HNS.CHAT](https://hns.chat/), CREATED BY @skimo [ESKIMO](https://github.com/eskimo).
+###### THIS IS THE SUPPORT PAGE FOR THE CHROME-EXTENSION ONLY! FOR ANY CREDIT OR QUESTION REGARDING THE CHAT ITSELF, PLEASE VISIT [HNSCHAT](https://hnschat/) OR [HNS.CHAT](https://hns.chat/), CREATED BY @eskimo [ESKIMO](https://github.com/eskimo).
 
 Welcome on the support page for the hnschat extension! 
 If you are experiencing any problems with the extension at all, please contact me!
