@@ -43,21 +43,15 @@ For now, I'll give you two of my favourite options:
 
 #
 
-#### SETTING A TXT RECORD
-
-{Description, guide with/by link}
-
-#
 
 ### WE SUPPORT YOU, YOU SUPPORT US? ☕
 
 ###### ALL CREDITS FOR HNSCHAT GO TO [ESKIMO](https://github.com/eskimo)
 
 ##### I'm investing my own time and resources to build and maintain this project! If you like and enjoy it, please feel free to buy me a coffee!
+BTC: [bc1qccegucnv97x3ndxq9hkvrrharqqtycklxdzrhp](bc1qccegucnv97x3ndxq9hkvrrharqqtycklxdzrhp)  
+ETH: [0x85D47e32520695376F67826C45cAE651a89B32f6](0x85D47e32520695376F67826C45cAE651a89B32f6)  
 HNS: [hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h](hs1q4vacr40hntegrr6ce2y53f5yvgs43vz44n7w3h)  
 AR: [WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc](WBD0JmaGVrUkZYU2ElpvSHxOl0BltlUjTjYk7JYUARc)  
-BTC:  
-ETH:  
-SEN:  
-
-##
+SENT: [sent1pr8d8t36cvhrd3kyqwy77ztvrkv6vldudkpn5k](sent1pr8d8t36cvhrd3kyqwy77ztvrkv6vldudkpn5k)  
+##  

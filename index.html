@@ -14,15 +14,275 @@
                 padding: 0;
                 background: rgba( 30, 30, 33, .99 );
                 color: rgba( 253, 253, 255, .99 );
+                font-family: monospace;
+                font-size: calc( 1rem );
+                text-shadow: 2px 1px 5px rgba( 253, 253, 255, .15 );
+            }
+            * {
+                box-sizing: border-box;
+            }
+            header {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 1em 2em;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                box-shadow: 2px 4px 12px black;
+            }
+            header span {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+            }
+            h1 {
+                position: relative;
+                height: 38px;
+                margin: 0;
+                padding: 0;
+                flex: 1;
+            }
+            h1 span {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                margin: 0;
+                padding: .375em 0;
+                font-size: 18px;
+                color: crimson;
+            }
+            header span img {
+                position: relative;
+                margin: 0 .5em;
+                padding: 0;
+                flex: 0;
+                aspect-ratio: 1;
+            }
+            header > h2 {
+                position: relative;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                align-items: stretch;
+            }
+            a {
+                text-decoration: none;
+                position: relative;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                color: inherit;
+            }
+            h2 > a {
+                padding: .5rem 1rem;
+            }
+            h2 > a::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 0;
+                margin: auto;
+                padding: 0;
+                background: linear-gradient(133deg, cornflowerblue, cornflowerblue, skyblue, cornflowerblue, cornflowerblue );
+                transition: .23s ease-in-out;
+                overflow: hidden;
+                border-radius: .125em;
+                color: grey;
+                padding: .25em 0;
+            }
+            h2 > a:visited {
+                color: grey;
+            }
+            h2 > a:hover::before {
+                content: 'to chat';
+                width: 100%;
+                color: white;
+                padding: inherit;
+            }
+
+            section {
+                position: relative;
+                margin: 4rem auto;
+                padding: 1.5rem 3rem;
+                max-width: 860px;
+                box-shadow: 2px 4px 13px rgba( 68, 68, 64, .5 );
+                border-radius: .375em;
+                background-color: black;
+            }
+
+            section > h2 {
+                position: relative;
+                margin: 1em 0;
+            }
+            section > h2::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: .5rem;
+                border-radius: .075em;
+                background: linear-gradient(176deg, #a440ca, cornflowerblue, cyan, skyblue )
+            }
+            
+            h4, p {
+                margin: .25em 0;
+                padding: 0;
+            }
+            section.content {
+            }
+
+            #table_of_contents {
+                display: grid;
+                margin: 0 auto;
+                padding: 0;
+                grid-template-columns: 32px 64px auto;
+                grid-auto-rows: calc( 1rem + 0.5em );
+                white-space: nowrap;
+            }
+            #table_of_contents > span {
+                margin: 0;
+                padding: .125em .25em;
+            }
+            section p {
+                margin: 1em 0;
+                padding: 0 2em;
+                line-height: calc( 1rem + 0.5em);
             }
         </style>
     </head>
     <body>
         <nav></nav>
         <header>
-            <h1>HNSCHAT CHROME EXTENSION</h1>
+            <span>
+                <img src="./extension/unpacked/logo/grey_48.png" alt="Handshake Logo 48x48" layout="fill">
+                <h1>
+                    chrome-extention
+                    <span>Latest&nbsp;<i>maintained</i></span>
+                </h1>
+            </span>
+            <h2>
+                <a href="https://hnschat/">hnschat</a>
+            </h2>
         </header>
-        <main></main>
+        <main>
+            <section class="content">
+                <h2>Table of Contents</h2>
+                <div id="table_of_contents">
+                    <span><i>Chapter</i></span><span></span><span><i>Title</i></span>
+                    <span></span><span></span><span></span>
+                    <span>1</span><span></span><span>About</span>
+                    <span>-</span><span>1</span><span>Open-source VS. Chrome web store</span>
+                    <span>-</span><span>2</span><span>Options</span>
+                    <span></span><span></span><span></span>
+                    <span>2</span><span></span><span>How to: <u>Install latest version</u></span>
+                    <span>-</span><span>1</span><span>Get the package</span>
+                    <span>-</span><span>2</span><span>Extract the files</span>
+                    <span>-</span><span>3</span><span>Enable developer mode</span>
+                    <span>-</span><span>4</span><span>Load the extension</span>
+                    <span></span><span></span><span></span>
+                    <span>3</span><span></span><span>How to: <u>Install from chrome web store</u></span>
+                    <span>-</span><span>1</span><span>Add the extension directly from the store</span>
+                </div>
+            </section>
+            <section>
+                <h2>1: About</h2>
+                <h4>1.1 Open-source VS. Chrome web store</h4>
+                <p>
+                    First I'll explain a little bit about the Chrome web store.<br />
+                    <br />
+                    To add an extension to the store is quite a long and tedious process.<br />
+                    After this process the package can not be changed or updated.<br />
+                    So the beta vesrion that's in the store: <a href="https://something/">hnschat - beta</a> Cannot be changed.<br />
+                    Even when chrome updates and changes extension parameters.<br />
+                    <br />
+                    The open-source option on the other hand..<br />
+                    <br />
+                    The open-source version is a maintained repo providing the latest version<br />
+                    You will have to download and add the latest version manually thp.<br />
+                    We will notify you on twitter and hnschat if there is a new stable release.<br />
+                    To install the extension from the github repo, please follow the guide below:<br />
+                    <span>How to ~ <important>install the latest version (os)</important></span>
+                </p>
+                <h4>1.2 Options</h4>
+                <p>
+                    Options currently provides the following settings:
+                    <ul>
+                        <li>Extension resolution</li>
+                        <li>Source selection: <q>https://hnschat/ or https://hns.chat/</q></li>
+                    </ul>
+                </p>
+                <p>
+                    To open the options menu, richt-click on the extension icon in your browser, and click on <q>options</q>
+                </p>
+            </section>
+            <section>
+                <h2>2: How to ~ <important>install the latest version</important></h2>
+                <h4>2.1 ~ Get the package</h4>
+                <p>
+                    From:&#160;<a href="https://github.com/Sh1Tt/hnschat-chrome-extension/files"><q>repo/files</q></a><br />
+                    download:&#160;<q>package-{version}.zip</q><br />
+                    Current version:&#160;<code>0.0.4</code>.
+                </p>
+                <h4>2.2 ~ Extract the files</h4>
+                <p>
+                    - In a directory of your choosing,
+                    create a new folder to hold your copy of the extension.<br />
+                    - Extract the <q>package-{version}.zip</q> into the newly created folder.
+                </p>
+                <h4>2.3 ~ Enable <q>Developer mode</q></h4>
+                <p>
+                    - Open your browser and go to: Menu -> Extensions<br />
+                    The extension manager will appear.<br />
+                    - Check if <q>Developer mode</q> is enabled. If not, enable it.<br />
+                    <span class="enabled">
+                        The button: <q>Load Unpacked</q> should be visible.
+                    <span>
+                </p>
+                <h4>2.4 ~ Load the extension</h4>
+                <p>
+                    - Click the button: <q>Load unpacked</q><br />
+                    - Select the folder where you have extracted the files.
+                    <span class="success">
+                        The extension is loaded!<br />
+                        Pin the extension icon and your all set!<br />
+                        Please enjoy!
+                    <span>
+                </p>
+                <p>
+                    If you have any questions regarding the extenstion,<br />
+                    feel free to contact me on any of these channels:<br />
+                    <ul>
+                        <li>Email: sh1tt@hns.is</li>
+                        <li>DMs: @_sh1tt</li>
+                        <li>Github: Sh1tt</li>
+                    </ul>
+                </p>
+            </section>
+            <section>
+                <h2>3: How to install from the chrome store</h2>
+                <h4>3.1 ~ Add the extension directly from the store</h4>
+                <p>    
+                    - Go to: <a href="chrome.google.com/webstore/detail/hnschat-beta/nehgjjjpbbeokcpkahbkcfcnncabngfm?hl=nl">chrome.google.com/webstore/hnschat-beta/</a><br />
+                    - Click the <q>Add to browser</q> button.
+                    <span class="success">
+                        The extension is loaded!<br />
+                        Pin the extension icon and your all set!<br />
+                        Please enjoy!
+                    </span>
+                </p>
+            </section>
+        </main>
         <footer></footer>
     </body>
 </html>

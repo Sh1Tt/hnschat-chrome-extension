@@ -1,6 +1,6 @@
 {
 	"manifest_version": 3,
-	"name": "HNSchat",
+	"name": "hnschat",
 	"description": "HNSchat. A decentralised chat using handshake names. Own your identity now. Chat privately. Send crypto. And more to come!",
 	"author": "Sh1Tt",
 	"version": "0.0.4",
