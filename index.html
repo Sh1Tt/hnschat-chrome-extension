@@ -166,9 +166,9 @@
 
             #table_of_contents {
                 display: grid;
-                margin: 0 auto;
+                margin: 0 2em;
                 padding: 0;
-                grid-template-columns: 32px 64px auto;
+                grid-template-columns: 32px 48px auto;
                 grid-auto-rows: calc( 1rem + 0.5em );
                 white-space: nowrap;
             }
@@ -219,6 +219,27 @@
                 padding: .125em .25em;
                 background-color: crimson;
             }
+            /* width & round */
+              ::-webkit-scrollbar {
+                width: 5px;
+                border-radius: 50%;
+              }
+
+              /* Track */
+              ::-webkit-scrollbar-track {
+                background: #333;
+              }
+
+              /* Handle */
+              ::-webkit-scrollbar-thumb {
+                background: #666;
+              }
+
+              /* Handle on hover */
+              ::-webkit-scrollbar-thumb:hover {
+                background: #777;
+              }
+
         </style>
     </head>
     <body>
