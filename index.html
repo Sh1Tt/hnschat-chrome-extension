@@ -173,10 +173,48 @@
                 margin: 0;
                 padding: .125em .25em;
             }
-            section p {
+            .inline-logo {
+                position: relative;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+            }
+            .inline-logo > img {
+                width: 24px;
+                margin: .5em;
+                aspect-ratio: 1;
+
+            }
+
+            section p, ul {
                 margin: 1em 0;
                 padding: 0 2em;
                 line-height: calc( 1rem + 0.5em);
+            }
+
+            .success {
+                color:  gold;
+                margin: 1em 0;
+                padding: 0 2em;
+            }
+
+            .contact-option {
+                color:  crimson;
+                transition: .23s;
+            }
+            
+            .contact-option:hover {
+                color: cornflowerblue;
+            }
+            code {
+                margin: 0 auto 1em 0;
+                padding: .125em .25em;
+                background-color: crimson;
             }
         </style>
     </head>
@@ -202,7 +240,9 @@
         </header>
         <main>
             <section class="content">
-                <h2>Table of Contents</h2>
+                <h2>
+                    Table of Contents
+                </h2>
                 <div id="table_of_contents">
                     <span><i>Chapter</i></span><span></span><span><i>Title</i></span>
                     <span></span><span></span><span></span>
@@ -219,6 +259,9 @@
                     <span>3</span><span></span><span>How to: <u>Install from chrome web store</u></span>
                     <span>-</span><span>1</span><span>Add the extension directly from the store</span>
                 </div>
+                <span class="inline-logo">
+                    <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
+                </span>
             </section>
             <section>
                 <h2>1: About</h2>
@@ -250,62 +293,85 @@
                 <p>
                     To open the options menu, richt-click on the extension icon in your browser. Then click on <q>options</q>.
                 </p>
+                <span class="inline-logo">
+                    <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
+                </span>
             </section>
             <section>
                 <h2>2: How to ~ <important>install the latest version</important></h2>
                 <h4>2.1 ~ Get the package</h4>
                 <p>
-                    From:&#160;<a href="https://github.com/Sh1Tt/hnschat-chrome-extension/files"><q>github.com/Sh1Tt/hnschat-chrome-extension/files/</q></a><br />
-                    download:&#160;<q>package-{version}.zip</q><br />
-                    Current version:&#160;<code>0.0.4</code>.
+                    <ul>
+                        <li>Download <q>package-{version}.zip</q> from <a href="https://github.com/Sh1Tt/hnschat-chrome-extension/files">repository/files</a>.</li><br />
+                        <code>Latest package:&#160;v0.0.4</code>
+                    </ul>
                 </p>
                 <h4>2.2 ~ Extract the files</h4>
                 <p>
-                    - In a directory of your choosing,
-                    create a new folder to hold your copy of the extension.<br />
-                    - Extract the <q>package-{version}.zip</q> into the newly created folder.
+                    <ul>
+                        <li>
+                            In a directory of your choosing,
+                            create a new folder to hold your copy of the extension.
+                        </li>
+                        <li>
+                            Extract the <q>package-{version}.zip</q> into the newly created folder.
+                        </li>
+                    </ul>
                 </p>
                 <h4>2.3 ~ Enable <q>Developer mode</q></h4>
                 <p>
-                    - Open your browser and go to: Menu -> Extensions<br />
-                    The extension manager will appear.<br />
-                    - Check if <q>Developer mode</q> is enabled. If not, enable it.<br />
-                    <span class="enabled">
-                        The button: <q>Load Unpacked</q> should be visible.
-                    <span>
+                    <ul>
+                        <li>
+                            Open your browser and go to: Menu -> Extensions<br />
+                            The extension manager will appear.
+                        </li>
+                        <li>
+                            Check if <q>Developer mode</q> is enabled. If not, enable it.<br />
+                            <span class="enabled">
+                                The button: <q>Load unpacked</q> should be visible.
+                            <span>
+                        </li>
+                    </ul>
                 </p>
                 <h4>2.4 ~ Load the extension</h4>
                 <p>
-                    - Click the button: <q>Load unpacked</q><br />
-                    - Select the folder where you have extracted the files.
-                    <span class="success">
-                        The extension is loaded!<br />
-                        Pin the icon and you are done!!<br />
-                        Enjoy!
-                    <span>
+                    <ul>
+                        <li>Click the button: <q>Load unpacked</q><br /></li>
+                        <li>Select the newly created folder where you have extracted the package.<br /></li>
+                    </ul>
+                    <div class="success">
+                        The extension should be added to your browser.<br />
+                        Just pin the icon and hnschat will be 1 click away.<br />
+                        Enjoy! Have a beautiful time!
+                    </div>
                 </p>
                 <p>
                     If you have any questions regarding the extenstion,<br />
-                    feel free to contact me on any of these channels:<br />
-                    <ul>
-                        <li>Email: sh1tt@hns.is</li>
-                        <li>DMs: @_sh1tt</li>
-                        <li>Github: Sh1tt</li>
-                    </ul>
+                    feel free to contact me via any of these channels:<br />
+                    <br />
+                    handshake: <a href="http://sh1tt/" class="contact-option">shitt/</a>
+                    email: <a href="sh1tt@hns.is" class="contact-option">sh1tt@hns.is</a>
+                    DM: <a href="https://twitter.com/@_sh1tt/" class="contact-option">@_sh1tt</a>
                 </p>
+                <span class="inline-logo">
+                    <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
+                </span>
             </section>
             <section>
                 <h2>3: How to ~ install from the chrome store</h2>
                 <h4>3.1 ~ Add the extension directly from the store</h4>
                 <p>    
                     - Go to: <a href="chrome.google.com/webstore/detail/hnschat-beta/nehgjjjpbbeokcpkahbkcfcnncabngfm">chrome.google.com/webstore/hnschat-beta/</a><br />
-                    - Click the <q>Add to browser</q> button.
-                    <span class="success">
-                        The extension is loaded!<br />
-                        Pin the icon and you are done!!<br />
-                        Enjoy!
-                    </span>
+                    - Click the <q>Add to browser</q> button.<br />
+                    <div class="success">
+                        The extension should be added to your browser.<br />
+                        Just pin the icon and hnschat will be 1 click away.<br />
+                        Enjoy! Have a beautiful time!
+                    </div>
                 </p>
+                <span class="inline-logo">
+                    <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
+                </span>
             </section>
         </main>
         <footer></footer>
