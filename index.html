@@ -52,7 +52,7 @@
             }
             h1 span {
                 position: absolute;
-                top: 100%;
+                top: 50%;
                 left: 0;
                 margin: 0;
                 padding: .375em 0;
@@ -79,11 +79,13 @@
                 margin: 0;
                 padding: 0;
                 overflow: hidden;
-                color: inherit;
+                color: white;
             }
             h2 > a {
-                padding: .5rem 1rem;
-                min-width: 142px;
+                margin: 0 .5em;
+                padding: .25rem  0.125rem;
+                font-size: 22px;
+                min-width: 108px;
             }
             h2 > a::before {
                 content: '';
@@ -97,13 +99,12 @@
                 background: linear-gradient(133deg, cornflowerblue, cornflowerblue, skyblue, cornflowerblue, cornflowerblue );
                 transition: .23s ease-in-out;
                 overflow: hidden;
-                border-radius: .125em;
-                color: grey;
+                color: white;
                 padding: .25em 0;
                 z-index: 0;
             }
             h2 > a:visited {
-                color: grey;
+                color: white;
             }
             
             a#repo:hover::before {
@@ -120,7 +121,7 @@
             
             h2 > a:hover::before {
                 width: 100%;
-                color: white;
+                color: black;
                 padding: inherit;
             }
 
@@ -183,14 +184,14 @@
         <nav></nav>
         <header>
             <span>
-                <img src="./extension/unpacked/logo/grey_48.png" alt="Handshake Logo 48x48" layout="fill">
+                <img src="./files/unpacked/logo/grey_48.png" alt="Handshake Logo 48x48" layout="fill">
                 <h1>
                     chrome-extention
                     <span>Latest&nbsp;<i>maintained</i></span>
                 </h1>
             </span>
             <h2>
-                <a id="repo" href="https://github.com/Sh1tt/hnschat-chrome-extension">github/repo</a>
+                <a id="repo" href="https://github.com/Sh1tt/hnschat-chrome-extension">repo</a>
             </h2>
             <h2>
                 <a id="store" href="chrome.google.com/webstore/detail/hnschat-beta/nehgjjjpbbeokcpkahbkcfcnncabngfm">store</a>
