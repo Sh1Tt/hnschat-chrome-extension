@@ -218,6 +218,8 @@
                 margin: 0 auto 1em 0;
                 padding: .125em .25em;
                 background-color: crimson;
+                border-radius: .125em;
+                color: black;
             }
             /* width & round */
               ::-webkit-scrollbar {
@@ -243,7 +245,6 @@
         </style>
     </head>
     <body>
-        <nav></nav>
         <header>
             <span>
                 <img src="./files/unpacked/logo/grey_48.png" alt="Handshake Logo 48x48" layout="fill">
@@ -267,36 +268,37 @@
                 <h2>
                     Table of Contents
                 </h2>
-                <div id="table_of_contents">
+                <nav id="table_of_contents">
                     <span><i>Chapter</i></span><span></span><span><i>Title</i></span>
                     <span></span><span></span><span></span>
-                    <span>1</span><span></span><span>About</span>
-                    <span>-</span><span>1</span><span>Open-source VS. Chrome web store</span>
-                    <span>-</span><span>2</span><span>Options</span>
-                    <span>-</span><span>3</span><span>support</span>
+                    <span style="background-color:grey;font-weight:600;border-radius:.125em 0 0 .125em;">1</span><span style="background-color:grey;"></span><span style="cursor:pointer;background-color:grey;font-weight:600;border-radius:0 .125em .125em 0;" onClick="scrollMe(`#about`)">About</span>
+                    <span>-</span><span>1</span><span style="cursor:pointer;" onClick="scrollMe(`#about`)">Open-source VS. Chrome web store</span>
+                    <span>-</span><span>2</span><span style="cursor:pointer;" onClick="scrollMe(`#versions`)">Options</span>
+                    <span>-</span><span>3</span><span style="cursor:pointer;" onClick="scrollMe(`#options`)">support</span>
                     <span></span><span></span><span></span>
-                    <span>2</span><span></span><span>How to: <u>Install latest version</u></span>
-                    <span>-</span><span>1</span><span>Get the package</span>
-                    <span>-</span><span>2</span><span>Extract the files</span>
-                    <span>-</span><span>3</span><span>Enable developer mode</span>
-                    <span>-</span><span>4</span><span>Load the extension</span>
+                    <span style="background-color:grey;font-weight:600;border-radius:.125em 0 0 .125em;">2</span><span style="background-color:grey;"></span><span style="cursor:pointer;background-color:grey;font-weight:600;border-radius:0 .125em .125em 0;" onClick="scrollMe(`#os`)">How to: <u>Install latest version</u></span>
+                    <span>-</span><span>1</span><span style="cursor:pointer;" onClick="scrollMe(`#os`)">Get the package</span>
+                    <span>-</span><span>2</span><span style="cursor:pointer;" onClick="scrollMe(`#os-package`)">Enable developer mode</span>
+                    <span>-</span><span>3</span><span style="cursor:pointer;" onClick="scrollMe(`#os-enable`)">Load the extension</span>
                     <span></span><span></span><span></span>
-                    <span>3</span><span></span><span>How to: <u>Install from chrome web store</u></span>
-                    <span>-</span><span>1</span><span>Add the extension directly from the store</span>
-                </div>
+                    <span style="background-color:grey;font-weight:600;border-radius:.125em 0 0 .125em;">3</span><span style="background-color:grey;"></span><span style="cursor:pointer;background-color:grey;font-weight:600;border-radius:0 .125em .125em 0;" onClick="scrollMe(`#os-enable`)">How to: <u>Install from chrome web store</u></span>
+                    <span>-</span><span>1</span><span style="cursor:pointer;" onClick="scrollMe(`#os-enable`)">Add the extension directly from the store</span>
+                </nav>
+                <br />
+                <br />
                 <span class="inline-logo">
                     <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
                 </span>
             </section>
-            <section>
+            <section id="about">
                 <h2>1: About</h2>
                 <h4>1.1 Open-source VS. Chrome web store</h4>
-                <p>
+                <p id="versions">
                     First I'll explain a little bit about the Chrome web store.<br />
                     <br />
                     To add an extension to the store is quite a long and tedious process.<br />
                     After this process the package can not be changed or updated.<br />
-                    So the beta vesrion that's in the store: <a href="https://something/">hnschat - beta</a> Cannot be changed.<br />
+                    So the beta vesrion that's in the store: <a href="https://something/"><q>hnschat - beta v0.0.3</q></a> cannot be changed.<br />
                     Even when chrome updates and changes extension parameters.<br />
                     <br />
                     The open-source option on the other hand..<br />
@@ -309,7 +311,7 @@
                 </p>
                 <br />
                 <h4>1.2 Options</h4>
-                <p>
+                <p id="options">
                     Options currently provides the following settings:<br />
                     <br />
                     - Resolution<br />
@@ -332,7 +334,7 @@
                 </p>
                 <br />
                 <h4>1.3 Support</h4>
-                <p>
+                <p id="support">
                     If you have any questions regarding the extension,<br />
                     please, contact me via any of these channels:<br />
                     <br />
@@ -345,47 +347,45 @@
                     <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
                 </span>
             </section>
-            <section>
+            <section id="os">
                 <h2>2: How to ~ <important>install the latest version</important></h2>
                 <h4>2.1 ~ Get the package</h4>
-                <p>
+                <p id="os-package">
                     <ul>
-                        <li>Download <q>package-{version}.zip</q> from <a href="https://github.com/Sh1Tt/hnschat-chrome-extension/tree/main/files">repository/files</a>.</li><br />
-                        <code>Latest package:&#160;v0.0.4</code>
+                        <li>Download <q style="background-color:blueviolet;border-radius:.125em;">package-{version}.zip</q> from the repo&apos;s <a style="color: cornflowerblue;text-decoration: underline 1px solid currentcolor;" href="https://github.com/Sh1Tt/hnschat-chrome-extension/tree/main/files">/files</a> directory.</li><br />
+                        <a href="https://github.com/Sh1Tt/hnschat-chrome-extension/blob/main/files/package_v0.0.4.zip">
+                            <code>Latest:&#160;v0.0.4</code>
+                        </a>
+                        <a href="https://github.com/Sh1Tt/hnschat-chrome-extension/blob/main/files/package_v0.0.3.zip">
+                            <code style="background-color:sandybrown;">In store:&#160;v0.0.3</code>
+                        </a>
                     </ul>
-                </p>
-                <h4>2.2 ~ Extract the files</h4>
-                <p>
                     <ul>
-                        <li>
-                            In a directory of your choosing,
-                            create a new folder to hold your copy of the extension.
-                        </li>
-                        <li>
-                            Extract the <q>package-{version}.zip</q> into the newly created folder.
-                        </li>
+                        <li>Extract the files.</li>
                     </ul>
+                    <br />
                 </p>
-                <h4>2.3 ~ Enable <q>Developer mode</q></h4>
-                <p>
+                <h4>2.2 ~ Enable <q>Developer mode</q></h4>
+                <p id="os-enable">
                     <ul>
                         <li>
-                            Open your browser and go to: Menu -> Extensions<br />
-                            The extension manager will appear.
+                            In your browser click: Menu -> Extensions<br />
                         </li>
                         <li>
-                            Check if <q>Developer mode</q> is enabled. If not, enable it.<br />
-                            <span class="enabled">
-                                The button: <q>Load unpacked</q> should be visible.
-                            <span>
+                            In the extension manager,
+                            check if <q>Developer mode</q> is enabled. If not, enable it.<br />
                         </li>
                     </ul>
+                    <p>
+                        *the buttun <q>Load unpacked</q> should be visible.
+                    </p>
+                    <br />
                 </p>
-                <h4>2.4 ~ Load the extension</h4>
-                <p>
+                <h4>2.3 ~ Load the extension</h4>
+                <p id="os-add">
                     <ul>
                         <li>Click the button: <q>Load unpacked</q><br /></li>
-                        <li>Select the newly created folder where you have extracted the package.<br /></li>
+                        <li>Select the folder where you have extracted the files.<br /></li>
                     </ul>
                     <div class="success">
                         The extension should be added to your browser.<br />
@@ -398,10 +398,10 @@
                     <img src="./files/unpacked/logo/grey_128.png" alt="handshake image">
                 </span>
             </section>
-            <section>
+            <section id="store">
                 <h2>3: How to ~ install from the chrome store</h2>
                 <h4>3.1 ~ Add the extension directly from the store</h4>
-                <p>    
+                <p id="store-add">    
                     <ul>
                         <li>Go to: <a href="chrome.google.com/webstore/detail/hnschat-beta/nehgjjjpbbeokcpkahbkcfcnncabngfm">chrome.google.com/webstore/hnschat-beta/</a><br /></li>
                         <li>Click the <q>Add to browser</q> button.<br /></li>
@@ -419,5 +419,11 @@
             </section>
         </main>
         <footer></footer>
+        <script type="text/javascript">
+            const scrollMe = id => {
+                const x = document.body.querySelector(id);
+                return x.scrollIntoView();
+            }
+        </script>
     </body>
 </html>
